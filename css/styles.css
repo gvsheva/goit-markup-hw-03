@@ -267,20 +267,52 @@ a {
 
 .portfolio {
   border: 1px solid var(--accent-background-color);
+  padding: 120px 0;
+}
+
+.portfolio .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .portfolio .section-header {
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
+}
+
+.portfolio .portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio .portfolio-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio .portfolio-item-desc {
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
 }
 
 .portfolio .portfolio-item-name {
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .footer {
   background-color: var(--dark-background-color);
   color: var(--dark-foreground-color);
+  padding: 100px 0;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer .logo-tail {
