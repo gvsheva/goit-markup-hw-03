@@ -75,6 +75,9 @@ button {
   color: var(--primary-foreground-color);
   border: none;
   cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
 }
 
 button:hover {
@@ -172,14 +175,33 @@ a {
   color: var(--pressed-background-color);
 }
 
+.section-header {
+  color: var(--dark-color);
+}
+
 .hero {
   background-color: var(--dark-background-color);
   color: var(--dark-foreground-color);
   text-align: center;
+  padding: 188px 0;
 }
 
-.section-header {
-  color: var(--dark-color);
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero .hero-header {
+  max-width: 496px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.features {
+  padding: 120px 0;
 }
 
 .features .feature-name {
