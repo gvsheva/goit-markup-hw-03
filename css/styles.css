@@ -50,6 +50,10 @@ ul {
   list-style-type: none;
 }
 
+img {
+  display: block;
+}
+
 .small-text {
   font-size: 12px;
   line-height: 14px;
@@ -89,8 +93,23 @@ a {
   color: inherit;
 }
 
-header {
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
   background-color: var(--white-background-color);
+}
+
+.header .container {
+  display: flex;
+}
+
+.header .navigation {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -108,27 +127,48 @@ header {
   color: var(--dark-color);
 }
 
-.navigation a {
+.header .logo {
+  margin-right: 76px;
+}
+
+.navigation .navigation-links {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation .navigation-links-item {
+  padding: 24px 0;
+}
+
+.navigation .navigation-links a {
   color: var(--dark-color);
 }
 
-.navigation a:hover {
+.navigation .navigation-links a:hover {
   color: var(--pressed-background-color);
 }
 
-.navigation a:focus {
+.navigation .navigation-links a:focus {
   color: var(--pressed-background-color);
 }
 
 .address {
   font-style: normal;
+  display: flex;
+  align-items: center;
 }
 
-.addresses a:hover {
+.address .addresses {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.address a:hover {
   color: var(--pressed-background-color);
 }
 
-.addresses a:focus {
+.address a:focus {
   color: var(--pressed-background-color);
 }
 
