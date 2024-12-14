@@ -224,8 +224,8 @@ a {
   gap: 24px;
 }
 
-.features .feature-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+.feature-item {
+  flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 .features .feature-name {
@@ -256,8 +256,11 @@ a {
 
 .team .team-member {
   background-color: var(--white-background-color);
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-member {
+  flex-basis: calc((100% - 24px * 3) / 4);
 }
 
 .team .team-member-desc {
